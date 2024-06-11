@@ -15,5 +15,4 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./message-queue"), exports);
-__exportStar(require("./async-queue"), exports);
 //# sourceMappingURL=index.js.map
