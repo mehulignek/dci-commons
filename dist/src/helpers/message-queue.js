@@ -3,8 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.subscribe = exports.publish = exports.init = void 0;
 const rabbitMQ = require("amqplib/callback_api");
 const fs = require("fs");
-const services_1 = require("src/services");
-const connectionUrl = process.env.rabbitMQ_url || 'amqp://reach-local:R3achL0cal@192.168.59.135:5672/reach-local';
+const services_1 = require("../services");
 let delay = 1;
 let [MS_NAME, HOST_NAME, AMQP_CONN, PUB_SUB_CHANNEL, CONNECTION_URL, OFFLINE_QUEUE] = [null, null, null, null, null, []];
 const init = (msName, hostName, connectionURL) => {

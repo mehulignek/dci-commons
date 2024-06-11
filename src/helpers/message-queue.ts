@@ -1,13 +1,9 @@
 import * as rabbitMQ from 'amqplib/callback_api';
 import * as fs from 'fs';
-import { Logger } from 'src/services';
-
-const connectionUrl = process.env.rabbitMQ_url || 'amqp://reach-local:R3achL0cal@192.168.59.135:5672/reach-local';
+import { Logger } from '../services';
 
 let delay = 1;
-
 let [MS_NAME, HOST_NAME, AMQP_CONN, PUB_SUB_CHANNEL, CONNECTION_URL, OFFLINE_QUEUE] = [null, null, null, null, null, []] as any;
-
 /**
  * Init the process
  * 
