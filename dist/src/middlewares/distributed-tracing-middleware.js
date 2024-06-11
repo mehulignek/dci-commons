@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DistributedTracingMiddleware = exports.getTracingId = exports.setTracingId = exports.distributedTracingNamespace = void 0;
 const cls = require("cls-hooked");
-const common_constants_1 = require("../../src/constants/common.constants");
+const common_constants_1 = require("../constants/common.constants");
 const uuid_1 = require("uuid");
 exports.distributedTracingNamespace = cls.createNamespace('distributed-tracing');
 const TRACING_ID_KEY = 'tracingId';
